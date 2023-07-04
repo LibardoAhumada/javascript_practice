@@ -123,3 +123,32 @@ const wordCounter2 = (word2) => {
   console.log(wordCounter2("Paracaidas"));
   console.log(wordCounter2("carro"));
   
+  /*Practica 7*/
+  /*  4.- Necesito reemplazar todas las coincidencias de una palabra dentro de un texto, con otro texto
+        "mi perro es gris y es un latoso" "es" "no es"
+             "mi perro no es gris y no es un latoso"*/
+/*Versión 1 Practica 7*/
+console.log('"PRACTICA 7:Necesito reemplazar todas las coincidencias de una palabra dentro de un texto, con otro texto \n ejemplo: mi perro es gris y es un latoso" \n"es" "no es"     "mi perro no es gris y no es un latoso"')
+let phrase = "Mi perro es gris y es un latoso\n";
+console.log(phrase);
+function changePhrase(oldword, newword){
+phrase = (phrase.replaceAll(oldword, newword));
+return phrase;
+}
+console.log(changePhrase("es", "no es"));
+console.log(changePhrase("perro", "gato"));
+console.log(changePhrase("gato", "loro"));
+console.log(changePhrase("loro", "guacamaya"));
+console.log(changePhrase("guacamaya", "perro"));
+
+/*Versión 2 Arrow verse Practica 7*/
+console.log('"PRACTICA 7 Versión Arrow \n"');
+let phrase2 = "Mi perro es gris y es un latoso\n";
+console.log(phrase2);
+const changePhrase2 = (oldword2, newword2) => phrase2.replaceAll(oldword2, newword2);
+
+console.log(changePhrase2("es", "no es"));
+console.log(changePhrase2("perro", "gato"));
+console.log(changePhrase2("gato", "loro"));
+console.log(changePhrase2("loro", "guacamaya"));
+console.log(changePhrase2("guacamaya", "perro"));
