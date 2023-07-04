@@ -52,3 +52,9 @@ const enumeraterStrings5 = (string5, index5) => {
     }
 }
 console.log(enumeraterStrings5("murcielago", 10));
+
+/*6a Versión: tomada de la versión 3 pero más simplificada*/
+const enumeraterStringsarrowif6 = (string6, index6) => 
+(string6.charAt(index6) === "") ? "El index" + index6 + " de la cadena de caracteres " + string6 + " esta fuera del rango"
+: "El caracter que ocupa el index: " + '"' + index6 + '"' + " dentro del string " + '"' + string6 + '"' + "\nLo tiene el caracter " + '"' +string6.charAt(index6) + '"';  
+console.log (enumeraterStringsarrowif6("murcielago", 6));
