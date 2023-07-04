@@ -58,3 +58,48 @@ const enumeraterStringsarrowif6 = (string6, index6) =>
 (string6.charAt(index6) === "") ? "El index" + index6 + " de la cadena de caracteres " + string6 + " esta fuera del rango"
 : "El caracter que ocupa el index: " + '"' + index6 + '"' + " dentro del string " + '"' + string6 + '"' + "\nLo tiene el caracter " + '"' +string6.charAt(index6) + '"';  
 console.log (enumeraterStringsarrowif6("murcielago", 6));
+
+
+
+/*PRACTICA 5:.2.- Necesitamos saber si un texto cualquiera tiene dentro otro string
+        "Israel" "ra" - si lo incluye
+        "Israel" "ac" - no lo incluye"*/
+
+console.log('PRACTICA 5 "REQUERIMIENTOS:\n"Necesitamos saber si un texto cualquiera tiene dentro otro string. \nEJEMPLO:\n"Israel" "ra" - si lo incluye \n"Israel" "ac" - no lo incluye\n\n"');
+/*Versión 1*/
+function characterFinder(name, char){
+    let charIncluded = name.includes(char);
+    if(charIncluded){
+        return "Tu string " + '"'+ char +'"' + " se encuentra dentro de la cadena de caracteres " + '"' + name + '"' 
+    }else{
+        return "Tu string " + '"'+ char +'"'+ " NO se encuentra dentro de la cadena de caracteres " + '"'  + name + '"' 
+    }
+}
+console.log(characterFinder("Libardo", "do"));
+console.log(characterFinder("Libardo", "Liba"));
+console.log(characterFinder("Libardo", "tu"));
+
+/*Versión 2 Arrow verse*/
+const characterFinder2 = (name2, char2) =>{
+    let charIncluded2 = name2.includes(char2);
+    if(charIncluded2){
+        return "Tu string " + '"'+ char2 +'"' + " se encuentra dentro de la cadena de caracteres " + '"' + name2 + '"' 
+    }else{
+        return "Tu string " + '"'+ char2 +'"'+ " NO se encuentra dentro de la cadena de caracteres " + '"'  + name2 + '"' 
+    }
+}
+console.log(characterFinder2("Libardo", "ba"));
+console.log(characterFinder2("Libardo", "rdo"));
+console.log(characterFinder2("Libardo", "tata"));
+
+
+/*Versión 3 Arrow verse*/
+
+const characterFinder3 = (name3, char3) => name3.includes(char3)
+    ? "Tu string " + '"'+ char3 +'"' + " se encuentra dentro de la cadena de caracteres " + '"' + name3 + '"' 
+    : "Tu string " + '"'+ char3 +'"'+ " NO se encuentra dentro de la cadena de caracteres " + '"'  + name3 + '"'; 
+
+console.log(characterFinder3("Libardo", "ti"));
+console.log(characterFinder3("Libardo", "ardo"));
+console.log(characterFinder3("Libardo", "Liba"));
+
