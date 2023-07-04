@@ -1,5 +1,45 @@
 
-/*PRACTICA # 4: DIFERENTES VERSIONES DE UN MISMO REQURIMIENTO*/
+/*PRACTICA # 1: */
+
+/*Requerimientos: Crear una función que imprima si el nombre es corto si tiene menos de 5 letras e imprima tu nombre es largo si tiene más de 5 caracteres*/
+console.log("Versión 1 Ejercicio 1\n")
+function fullName(name) {
+  let counterName = name.length;
+  if (counterName > 5) {
+      return "Tu nombre es largo por que tiene " + counterName + " caracteres";
+  } else {
+      return "Tu nombre es corto";
+  }
+}
+console.log(fullName("Libardo"));
+
+/*Practica 1 versión optimizada*/
+console.log("Versión 2 Ejercicio 1\n")
+const fullName2 = (name2) => {
+    let counterName = name2.length;
+    return (counterName > 5) ? "Tu nombre es largo porque tiene " + counterName + " caracteres\n" 
+                            : "Tu nombre es corto porque tiene " + counterName + " caracteres\n";
+  };  
+  console.log(fullName2("Libardo"));
+  
+/*PRACTICA # 2*/
+console.log("Ejercicio 2 Versión 1\n")
+console.log('"n2.- Crear una función que reciba 2 números y me devuelva un texto con base en las condiciones siguientes\n:si el resulta es par, devovler "tu resultado es par" \nsi es non, devolver "el resultado es non"');
+function pairwiseSorter (num1, num2){
+    let sumPairs = num1 + num2;
+    if((sumPairs % 2) === 0){
+        return "\nLa suma de " + num1 + " + " + num2 + "es igual a " + sumPairs + "\n El resultado es un numero par."
+    }else{
+        return "\nLa suma de " + num1 + " + " + num2 + "es igual a " + sumPairs + "\n El resultado es un numero non."
+    }
+}
+
+/*PRACTICA # 3*/
+
+
+
+/*PRACTICA # 4: */
+/*DIFERENTES VERSIONES DE UN MISMO REQURIMIENTO*/
 console.log("REQUERIMIENTOS: 1.- Necesitamos saber de cualquier string,\nel caracter que se encuentre en cualquier posición que indiquemos\n si la posición excede la cantidad de caracteres, indicar que no es posible ejecutar el ejercicio")
 
 /*1era versión-original: El index regresa un valor vacio el cual tomo de condicionante para regresar el mensaje de no encontrado*/
