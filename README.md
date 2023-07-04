@@ -1,11 +1,25 @@
-# JAVASCRIPT PRACTICE
+# <b>JAVASCRIPT PRACTICE</b>
 
 <img src ="assets/javascript_img.webp">
 
 ## Exercise for Javascript Class
 <br>
 
-## Requirements:
+## <b>Requirements:</b>
+<br>
+
+### 1.- create a function that receives a name and does the following:
+<br>
+
+###    if the name has more than 5 letters, print on screen "name is long" if not, print "name is short"
+<br>
+
+### 2.- Create a function that receives 2 numbers and returns a text based on the following conditions:
+### if result is even, return "your result is even"
+###  if non, return "result is non"
+<br>
+
+### 3.- Create a function that receives the name and surname of a person and returns the number of characters of the full name
 <br>
 
 ### 4.- We need to know of any string, the character that is in any position that we indicate.
