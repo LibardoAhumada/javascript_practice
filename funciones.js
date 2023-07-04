@@ -66,7 +66,7 @@ console.log (enumeraterStringsarrowif6("murcielago", 6));
         "Israel" "ac" - no lo incluye"*/
 
 console.log('PRACTICA 5 "REQUERIMIENTOS:\n"Necesitamos saber si un texto cualquiera tiene dentro otro string. \nEJEMPLO:\n"Israel" "ra" - si lo incluye \n"Israel" "ac" - no lo incluye\n\n"');
-/*Versión 1*/
+/*Versión 1 Practica 5*/
 function characterFinder(name, char){
     let charIncluded = name.includes(char);
     if(charIncluded){
@@ -79,7 +79,7 @@ console.log(characterFinder("Libardo", "do"));
 console.log(characterFinder("Libardo", "Liba"));
 console.log(characterFinder("Libardo", "tu"));
 
-/*Versión 2 Arrow verse*/
+/*Versión 2 Practica 5 Arrow verse */
 const characterFinder2 = (name2, char2) =>{
     let charIncluded2 = name2.includes(char2);
     if(charIncluded2){
@@ -93,7 +93,7 @@ console.log(characterFinder2("Libardo", "rdo"));
 console.log(characterFinder2("Libardo", "tata"));
 
 
-/*Versión 3 Arrow verse*/
+/*Versión 3 Practica 5 Arrow verse*/
 
 const characterFinder3 = (name3, char3) => name3.includes(char3)
     ? "Tu string " + '"'+ char3 +'"' + " se encuentra dentro de la cadena de caracteres " + '"' + name3 + '"' 
@@ -103,3 +103,23 @@ console.log(characterFinder3("Libardo", "ti"));
 console.log(characterFinder3("Libardo", "ardo"));
 console.log(characterFinder3("Libardo", "Liba"));
 
+
+/*PRATICA 6: Necesito saber la cantidad de palabras de un texto cualquiera*/
+console.log("PRACTICA 6: Necesito saber la cantidad de palabras de un texto cualquiera\n");
+
+/*Versión 1 de la practica 6*/
+function wordCounter(word){
+let totalWord = (word.length);
+return "El total de los caracteres de la palabra " + word + " es de " + totalWord + " caracteres";
+}
+console.log(wordCounter("libardo"));
+
+/*Versión 2 de la practica 6, versión flecha*/
+const wordCounter2 = (word2) => {
+    let word2length = word2.length;
+    return "El total de los caracteres de la palabra " + word2 + " es de " + word2length + " caracteres";
+  };  
+  console.log(wordCounter2("libardo"));
+  console.log(wordCounter2("Paracaidas"));
+  console.log(wordCounter2("carro"));
+  
