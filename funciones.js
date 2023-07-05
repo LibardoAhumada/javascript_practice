@@ -120,7 +120,14 @@ const enumeraterStringsarrowif6 = (string6, index6) =>
 : "El caracter que ocupa el index: " + '"' + index6 + '"' + " dentro del string " + '"' + string6 + '"' + "\nLo tiene el caracter " + '"' +string6.charAt(index6) + '"';  
 console.log (enumeraterStringsarrowif6("murcielago", 6));
 
-
+console.log("\nEjercicio 4 Versión 7\n");
+const checkChartAtposition = (namer, numerpos) => {
+    return namer[numerpos] ? "El index " + numerpos + " de la cadena de caracteres " + namer + " está dentro del rango"
+                           : "El caracter que ocupa el index: " + '"' + numerpos + '"' + " dentro del string " + '"' + namer + '"' + "\nLo tiene el caracter " + '"' + namer.charAt(numerpos) + '"';
+  };
+  
+  console.log(checkChartAtposition("santiago", 3));
+  
 
 /*PRACTICA 5:.2.- Necesitamos saber si un texto cualquiera tiene dentro otro string
         "Israel" "ra" - si lo incluye
