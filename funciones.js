@@ -1,30 +1,38 @@
 
-/*PRACTICA # 1: */
+/*PRACTICA # 1:\n */
 
-/*Requerimientos: Crear una función que imprima si el nombre es corto si tiene menos de 5 letras e imprima tu nombre es largo si tiene más de 5 caracteres*/
-console.log("Versión 1 Ejercicio 1\n")
+/*\nRequerimientos: Crear una función que imprima si el nombre es corto si tiene menos de 5 letras e imprima tu nombre es largo si tiene más de 5 caracteres*/
+console.log("EJERCICIO 1 Versión 1\n")
+console.log('\nREQUERIMIENTOS:\n Crear una función que imprima si el nombre es corto si tiene menos de 5 letras\n e imprima tu nombre es largo si tiene más de 5 caracteres\n');
 function fullName(name) {
   let counterName = name.length;
   if (counterName > 5) {
-      return "Tu nombre es largo por que tiene " + counterName + " caracteres";
+      return "\nTu nombre " + name + " es largo por que tiene " + counterName + " caracteres\n";
   } else {
-      return "Tu nombre es corto";
+      return "\nTu nombre " + name + " es corto por que tiene " + counterName + "caracteres\n";
   }
 }
 console.log(fullName("Libardo"));
+console.log(fullName("Pedro"));
+console.log(fullName("Ana"));
+console.log(fullName("Parangaricutirimicuaro"));
 
-/*Practica 1 versión optimizada*/
-console.log("Versión 2 Ejercicio 1\n")
+/*Practica 1 optimizada*/
+console.log("EJERCICIO 1 Versión 2 Optimizada\n")
 const fullName2 = (name2) => {
     let counterName = name2.length;
-    return (counterName > 5) ? "Tu nombre es largo porque tiene " + counterName + " caracteres\n" 
-                            : "Tu nombre es corto porque tiene " + counterName + " caracteres\n";
-  };  
+    return (counterName > 5) ? "\nTu nombre " + name2 + " es largo por que tiene " + counterName + " caracteres\n" 
+                            : "\nTu nombre " + name2 + " es corto por que tiene " + counterName + "caracteres\n";
   console.log(fullName2("Libardo"));
-  
+}
+console.log(fullName2("Libardo"));
+console.log(fullName2("Pedro"));
+console.log(fullName2("Ana"));
+console.log(fullName2("Parangaricutirimicuaro"));
+
 /*PRACTICA # 2*/
-console.log("Ejercicio 2 Versión 1\n")
-console.log('"n2.- Crear una función que reciba 2 números y me devuelva un texto con base en las condiciones siguientes\n:si el resulta es par, devovler "tu resultado es par" \nsi es non, devolver "el resultado es non"');
+console.log("\nEJERCICIO 2 Versión 1\n")
+console.log('\n REQUERIMIENTOS: Crear una función que reciba 2 números y me devuelva un texto con base en las condiciones siguientes\n:si el resulta es par, devovler "tu resultado es par" \nsi es non, devolver "el resultado es non"');
 function pairwiseSorter (num1, num2){
     let sumPairs = num1 + num2;
     if((sumPairs % 2) === 0){
@@ -35,18 +43,31 @@ function pairwiseSorter (num1, num2){
 }
 
 /*PRACTICA # 3*/
+/*Practica # 3 Versión 1 */
+console.log("\nEJERCICIO 3\n");
+console.log('\n REQUERIMIENTOS: 3.- Crear una función que reciba el nombre y apellidos de una persona \ny me devuelva la cantidad de caracteres de el nombre completo\n');
+function counterName(firstname, lastname){
+    let fusionName = firstname + " " + lastname;
+    console.log("\nEl numero de caracteres de " + fusionName + " es de:\n ");
+    conterCaracterName = fusionName.length;
+    return conterCaracterName;
+}
+console.log(counterName("Sergio", "Perez"));
+console.log(counterName("El chavo", "del ocho"));
+console.log(counterName("El canelo", " "));
 
 
 
 /*PRACTICA # 4: */
 /*DIFERENTES VERSIONES DE UN MISMO REQURIMIENTO*/
-console.log("REQUERIMIENTOS: 1.- Necesitamos saber de cualquier string,\nel caracter que se encuentre en cualquier posición que indiquemos\n si la posición excede la cantidad de caracteres, indicar que no es posible ejecutar el ejercicio")
+console.log("\nPRACTICA 1 del LUNES 3 de JULIO TAREA 4 del CURSO\n ")
+console.log('\n"REQUERIMIENTOS:  Necesitamos saber de cualquier string,\nel caracter que se encuentre en cualquier posición que indiquemos\n si la posición excede la cantidad de caracteres, indicar que no es posible ejecutar el ejercicio"');
 
 /*1era versión-original: El index regresa un valor vacio el cual tomo de condicionante para regresar el mensaje de no encontrado*/
 function enumeraterStrings(string, index) {
     let finderCharacters = string.charAt(index);
     if (finderCharacters === "") {
-        return "El index de la cadena de caracteres " + string + " esta fuera del rango";
+        return "\nEl index de la cadena de caracteres " + string + " esta fuera del rango \n";
     } else {
         return finderCharacters;
     }
